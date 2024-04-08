@@ -14,7 +14,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
-import thaumcraft.common.tiles.essentia.TileJarFillable;
 
 @Mod(modid = ModularMagic.MODID, name = ModularMagic.NAME, version = ModularMagic.VERSION, dependencies = ModularMagic.DEPENDENCIES)
 public class ModularMagic {
@@ -47,7 +46,6 @@ public class ModularMagic {
 
     public ModularMagic() {
         MinecraftForge.EVENT_BUS.register(RegistrationEvent.class);
-        new TileJarFillable();
     }
 
     @Mod.EventHandler
